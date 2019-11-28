@@ -4,7 +4,7 @@ import numpy as np
 
 # start with isorto data
 def main():
-    data = pd.read_csv("raw_data/emit_agg_by_isorto.csv")
+    data = pd.read_csv("../data/raw_data/emit_agg_by_isorto.csv")
 
     # Drop rows without a region
     data = data[pd.notnull(data['isorto'])]
